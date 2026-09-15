@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wedding of Morgane & Alexander</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- خطوط جوجل الفاخرة -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- زر التحكم في الموسيقى العائم -->
+  <div class="music-toggle" id="musicBtn" title="Toggle Music">
+    <span id="musicIcon">♪</span>
+  </div>
+
+  <!-- الشاشة الأولى: مشهد الظرف التفاعلي -->
+  <section class="hero-section">
+    <p class="tap-hint">Tap the envelope to open</p>
+    
+    <div class="invitation-container" id="envelopeWrapper">
+      <div class="envelope">
+        
+        <div class="flap"></div>
+        
+        <div class="wax-seal" id="waxSeal">
+          <span>M & A</span>
+        </div>
+
+        <!-- صورة بولارويد الشمال مع شريط لاصق -->
+        <div class="polaroid polaroid-left">
+          <div class="tape"></div>
+          <img src="image/1.jfif" alt="Bride and Groom">
+          <span>Together Forever</span>
+        </div>
+
+        <!-- صورة بولارويد اليمين مع شريط لاصق -->
+        <div class="polaroid polaroid-right">
+          <div class="tape"></div>
+          <img src="image/2.jfif" alt="Wedding Moments">
+          <span>The Journey Begins</span>
+        </div>
+
+        <!-- كارت الدعوة الرئيسي -->
+        <div class="card">
+          <p class="tagline">Save our Date</p>
+          <h1 class="names">Morgane & Alexander</h1>
+          <p class="date">18 . JULY . 2028</p>
+          <div class="details">
+            <p class="venue">CIPRIANI WALL STREET</p>
+            <p class="city">NEW YORK CITY</p>
+          </div>
+        </div>
+
+        <div class="pocket"></div>
+        
+      </div>
+    </div>
+
+    <!-- زر النزول للأسفل لاكتشاف باقي التفاصيل -->
+    <a href="#detailsSection" class="scroll-btn" id="scrollBtn">
+      <span>Explore Celebration</span>
+      <div class="arrow">&#8595;</div>
+    </a>
+  </section>
+
+  <!-- الشاشة الثانية: جميع تفاصيل الفرح الاحترافية -->
+  <section class="details-section" id="detailsSection">
+    
+    <!-- العداد التنازلي التفاعلي -->
+    <div class="section-block">
+      <h2 class="section-title">Counting Down To Forever</h2>
+      <div class="countdown-timer">
+        <div class="time-box"><span id="days">00</span><p>Days</p></div>
+        <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
+        <div class="time-box"><span id="minutes">00</span><p>Mins</p></div>
+        <div class="time-box"><span id="seconds">00</span><p>Secs</p></div>
+      </div>
+    </div>
+
+    <!-- برواز صورة فاخرة من صورك -->
+    <div class="vintage-frame">
+      <img src="image/3.jfif" alt="Couple Detail">
+      <p class="frame-quote">"Two souls with but a single thought, two hearts that beat as one."</p>
+    </div>
+
+    <!-- جدول مواعيد اليوم (Wedding Timeline) -->
+    <div class="section-block timeline-block">
+      <h2 class="section-title">Order of Events</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="time">05:00 PM</div>
+          <div class="icon">🍸</div>
+          <div class="event-desc">
+            <h4>Welcome Cocktail</h4>
+            <p>Arrival of guests & welcome refreshments</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">06:00 PM</div>
+          <div class="icon">💍</div>
+          <div class="event-desc">
+            <h4>The Ceremony</h4>
+            <p>Exchange of vows & wedding rings</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">07:30 PM</div>
+          <div class="icon">🍽️</div>
+          <div class="event-desc">
+            <h4>Dinner & Toasts</h4>
+            <p>Formal dinner & celebratory champagne</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">09:00 PM</div>
+          <div class="icon">🎂</div>
+          <div class="event-desc">
+            <h4>Cake Cutting & Party</h4>
+            <p>First dance, cake cutting & live DJ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- دريس كود الحفل ودرجات الألوان (Dress Code & Color Palette) -->
+    <div class="section-block dresscode-block">
+      <h2 class="section-title">Dress Code & Palette</h2>
+      <p class="dresscode-subtitle">Black Tie Optional / Formal Elegance</p>
+      <div class="color-palette">
+        <div class="color-swatch" style="background: #4a151b;" title="Burgundy"></div>
+        <div class="color-swatch" style="background: #d4af37;" title="Warm Gold"></div>
+        <div class="color-swatch" style="background: #f0ece3;" title="Soft Ivory"></div>
+        <div class="color-swatch" style="background: #2b2b2b;" title="Classic Black"></div>
+      </div>
+    </div>
+
+    <!-- مكان الحفل وزر جوجل ماب (Location & Map Link) -->
+    <div class="section-block location-block">
+      <h2 class="section-title">Location & Venue</h2>
+      <p class="venue-name">Cipriani Wall Street</p>
+      <p class="venue-address">55 Wall St, New York, NY 10005, United States</p>
+      <a href="https://maps.google.com" target="_blank" class="map-btn">
+        <span>📍 View On Google Maps</span>
+      </a>
+    </div>
+
+    <!-- كارت تأكيد الحضور (RSVP Form) -->
+    <div class="rsvp-card">
+      <div class="rsvp-header">
+        <h3>Kindly Respond</h3>
+        <p>Your presence is our greatest gift. Please let us know before June 1st.</p>
+      </div>
+      <form class="rsvp-form" onsubmit="event.preventDefault(); alert('Thank you! Your RSVP has been confirmed.');">
+        <input type="text" placeholder="Your Full Name(s)" required>
+        <input type="number" placeholder="Number of Guests" min="1" max="4" required>
+        <select required>
+          <option value="" disabled selected>Will you be able to attend?</option>
+          <option value="yes">Joyfully Attending</option>
+          <option value="no">Regretfully Cannot Attend</option>
+        </select>
+        <button type="submit">Send Confirmation</button>
+      </form>
+    </div>
+
+    <!-- ختام الصفحة الفاخر بالصورة الرابعة -->
+    <div class="footer-sign">
+      <img src="image/4.jfif" alt="Bouquet" class="footer-img">
+      <p class="waiting-text">We Can't Wait To Celebrate With You!</p>
+      <h3 class="footer-names">Morgane & Alexander</h3>
+    </div>
+
+  </section>
+
+  <!-- الصوت التلقائي الهادئ -->
+  <audio id="weddingMusic" loop src="music.mp3.mp3" preload="auto"></audio>auto"></audio>
+
+  <!-- كود التفاعل والتشغيل -->
+  <script>
+    const envelope = document.getElementById('envelopeWrapper');
+    const music = document.getElementById('weddingMusic');
+    const musicBtn = document.getElementById('musicBtn');
+    const musicIcon = document.getElementById('musicIcon');
+    const scrollBtn = document.getElementById('scrollBtn');
+
+    // ضغطة الظرف
+    envelope.onclick = function() {
+      envelope.classList.toggle('open');
+      
+      if (envelope.classList.contains('open')) {
+        music.play().then(() => {
+          musicBtn.classList.add('playing');
+        }).catch(() => {});
+        scrollBtn.classList.add('visible');
+      } else {
+        music.pause();
+        musicBtn.classList.remove('playing');
+        scrollBtn.classList.remove('visible');
+      }
+    };
+
+    // زر التحكم بالموسيقى
+    musicBtn.onclick = function() {
+      if (music.paused) {
+        music.play();
+        musicBtn.classList.add('playing');
+        musicIcon.innerText = "♪";
+      } else {
+        music.pause();
+        musicBtn.classList.remove('playing');
+        musicIcon.innerText = "✕";
+      }
+    };
+
+    // كود العداد التنازلي الحقيقي
+    const weddingDate = new Date("July 18, 2028 18:00:00").getTime();
+
+    setInterval(function() {
+      const now = new Date().getTime();
+      const distance = weddingDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerText = days < 10 ? '0' + days : days;
+      document.getElementById("hours").innerText = hours < 10 ? '0' + hours : hours;
+      document.getElementById("minutes").innerText = minutes < 10 ? '0' + minutes : minutes;
+      document.getElementById("seconds").innerText = seconds < 10 ? '0' + seconds : seconds;
+    }, 1000);
+  </script>
+</body>
+</html>
